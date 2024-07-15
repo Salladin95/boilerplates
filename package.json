@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "prepare": "husky install",
     "preview": "vite preview",
     "lint": "eslint src --max-warnings=0",
     "types": "tsc --project tsconfig.json --noEmit",
