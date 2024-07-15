@@ -2,7 +2,7 @@
 
 @layer base {
     html {
-        @apply text-primary-green
+        @apply text-black
     }
     html,
     body,
@@ -20,10 +20,6 @@
 @tailwind utilities;
 
 @layer utilities {
-    .green-primary-border {
-        @apply border-primary-green border-[1px];
-    }
-
     .flex-center {
         @apply flex items-center justify-center;
     }
