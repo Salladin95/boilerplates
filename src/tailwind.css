@@ -1,0 +1,67 @@
+@tailwind base;
+
+@layer base {
+    html {
+        @apply text-primary-green
+    }
+    html,
+    body,
+    #root {
+        min-height: 100svh;
+    }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .green-primary-border {
+        @apply border-primary-green border-[1px];
+    }
+
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    .fixed-center {
+        @apply fixed top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+    }
+
+    .absolute-center {
+        @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+    }
+
+    .absolute-x-center {
+        @apply absolute left-1/2 transform -translate-x-1/2;
+    }
+
+    .absolute-y-center {
+        @apply absolute top-1/2 transform -translate-y-1/2;
+    }
+
+    .triangle {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .animate-width {
+        animation: expandWidthAnimation 2s ease-out;
+    }
+
+    @keyframes expandWidthAnimation {
+        from {
+            max-width: 0;
+        }
+        to {
+            max-width: 100%;
+        }
+    }
+
+    .transition-bg {
+        transition: background-color 0.2s ease-in-out;
+    }
+}
