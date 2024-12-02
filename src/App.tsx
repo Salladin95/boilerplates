@@ -1,10 +1,11 @@
-import { Button } from "~/shared/ui"
+import { UiKit } from './widgets'
 
-export function App() {
+import './index.scss'
+
+function App() {
 	return (
-		<div>
-			<Button>Click me</Button>
-			<div>HELLO WORLD</div>
-		</div>
+		<UiKit />
 	)
 }
+
+export default App
